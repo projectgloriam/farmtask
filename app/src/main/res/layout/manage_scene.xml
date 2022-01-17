@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <ImageView
+            android:id="@+id/bg1"
+            android:layout_width="325dp"
+            android:layout_height="203dp"
+            android:layout_marginTop="104dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/carousel_bg" />
+
+        <ImageView
+            android:id="@+id/counterImage"
+            android:layout_width="305dp"
+            android:layout_height="276dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/counter" />
+
+        <Button
+            android:id="@+id/chicken_button"
+            android:layout_width="190dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="@+id/counterImage"
+            app:layout_constraintStart_toStartOf="@+id/counterImage"
+            app:layout_constraintTop_toTopOf="@+id/bg1" />
+
+        <Button
+            android:id="@+id/cocoa_button"
+            android:layout_width="190dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="@+id/counterImage"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/counterImage"
+            app:layout_constraintTop_toBottomOf="@+id/chicken_button" />
+
+        <Button
+            android:id="@+id/cow_button"
+            android:layout_width="190dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="@+id/counterImage"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/counterImage"
+            app:layout_constraintTop_toBottomOf="@+id/cocoa_button" />
+
+        <Button
+            android:id="@+id/corn_button"
+            android:layout_width="190dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="@+id/counterImage"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/counterImage"
+            app:layout_constraintTop_toBottomOf="@+id/cow_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@mipmap/ic_person"
+        android:title="@string/tasks" />
+    <item android:title="@string/account" />
+    <item android:title="@string/harvest" />
+    <item android:title="@string/counter" />
+    <item android:title="@string/store" />
+    <item android:title="@string/service" />
+    <item android:title="@string/new_farm" />
+</menu>

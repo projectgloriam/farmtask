@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_signup"
+    tools:context=".PaymentActivity">
+
+    <ImageView
+        android:id="@+id/payment_ribbon"
+        android:layout_width="371dp"
+        android:layout_height="175dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/payment_ribbon" />
+
+    <EditText
+        android:id="@+id/editTextCard"
+        android:layout_width="359dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_card"
+        android:ems="10"
+        android:hint="@string/cardno"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_ribbon" />
+    <EditText
+        android:id="@+id/editTextCVC"
+        android:layout_width="359dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_card"
+        android:ems="10"
+        android:hint="@string/cvc"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCard" />
+    <EditText
+        android:id="@+id/editTextBill"
+        android:layout_width="359dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_card"
+        android:ems="10"
+        android:hint="@string/billaddress"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCVC" />
+    <TextView
+        android:id="@+id/expireTextView"
+        android:layout_width="359dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_card"
+        android:ems="10"
+        android:hint="@string/expire"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBill" />
+
+    <ImageButton
+        android:id="@+id/payNowImageButton"
+        android:layout_width="325dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="84dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expireTextView"
+        app:srcCompat="@drawable/submit_btn_pay_now" />
+
+    <EditText
+        android:id="@+id/expireEditTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="@+id/expireTextView"
+        app:layout_constraintEnd_toEndOf="@+id/expireTextView"
+        app:layout_constraintTop_toTopOf="@+id/expireTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

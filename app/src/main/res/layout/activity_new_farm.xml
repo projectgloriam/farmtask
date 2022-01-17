@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".NewFarmActivity">
+
+    <ImageView
+        android:id="@+id/add_new_farm_ribbon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add_new_farm_ribbon" />
+
+    <TextView
+        android:id="@+id/farm_type_textView"
+        android:layout_width="381dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_type"
+        android:hint="@string/farm_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_new_farm_ribbon" />
+
+    <RadioGroup
+        android:id="@+id/farm_type_radio_group"
+        android:layout_width="263dp"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/farm_type_textView"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="@+id/farm_type_textView"
+        app:layout_constraintTop_toBottomOf="@+id/add_new_farm_ribbon">
+
+        <RadioButton
+            android:id="@+id/animal_radioButton"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/animal" />
+
+        <RadioButton
+            android:id="@+id/crop_radioButton"
+            android:layout_width="166dp"
+            android:layout_height="28dp"
+            android:text="@string/crop" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/category_textView"
+        android:layout_width="381dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_category"
+        android:hint="@string/category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/farm_type_textView" />
+    <RadioGroup
+        android:id="@+id/category_radio_group"
+        android:layout_width="263dp"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/category_textView"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="@+id/category_textView"
+        app:layout_constraintTop_toBottomOf="@+id/farm_type_textView">
+
+        <RadioButton
+            android:id="@+id/cash_radioButton"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cash" />
+
+        <RadioButton
+            android:id="@+id/food_radioButton"
+            android:layout_width="166dp"
+            android:layout_height="28dp"
+            android:text="@string/food" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/cultivate_textView"
+        android:layout_width="381dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_cultivate"
+        android:hint="@string/cultivate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_textView" />
+
+    <Spinner
+        android:id="@+id/cultivate_spinner"
+        android:layout_width="198dp"
+        android:layout_height="34dp"
+        android:entries="@array/cultivate_array"
+        app:layout_constraintEnd_toEndOf="@+id/cultivate_textView"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="@+id/cultivate_textView"
+        app:layout_constraintTop_toBottomOf="@+id/category_textView" />
+
+    <TextView
+        android:id="@+id/farm_size_textView"
+        android:layout_width="381dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_farm_size"
+        android:hint="@string/farm_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cultivate_textView" />
+
+    <Spinner
+        android:id="@+id/farm_size_spinner"
+        android:layout_width="198dp"
+        android:layout_height="34dp"
+        android:entries="@array/farm_size_array"
+        app:layout_constraintEnd_toEndOf="@+id/farm_size_textView"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="@+id/farm_size_textView"
+        app:layout_constraintTop_toBottomOf="@+id/cultivate_textView" />
+
+    <TextView
+        android:id="@+id/pay_with_textView"
+        android:layout_width="381dp"
+        android:layout_height="36dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_pay_now"
+        android:hint="@string/pay_with"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/farm_size_textView" />
+
+    <RadioGroup
+        android:id="@+id/pay_with_radio_group"
+        android:layout_width="263dp"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/pay_with_textView"
+        app:layout_constraintHorizontal_bias="0.991"
+        app:layout_constraintStart_toStartOf="@+id/pay_with_textView"
+        app:layout_constraintTop_toBottomOf="@+id/farm_size_textView">
+
+        <RadioButton
+            android:id="@+id/mmoney_radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mmoney" />
+
+        <RadioButton
+            android:id="@+id/ccard_radioButton"
+            android:layout_width="122dp"
+            android:layout_height="28dp"
+            android:text="@string/ccard" />
+
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="323dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="148dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay_with_textView"
+        app:srcCompat="@drawable/submit_btn_build_my_farm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

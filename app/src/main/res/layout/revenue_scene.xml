@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/bg3"
+        android:layout_width="325dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/carousel_bg" />
+
+    <ImageView
+        android:id="@+id/manage_farm_no_data"
+        android:layout_width="305dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/manage_farm_no_data" />
+
+    <ImageView
+        android:id="@+id/top_up_account"
+        android:layout_width="150dp"
+        android:layout_height="71dp"
+        app:layout_constraintEnd_toEndOf="@+id/manage_farm_no_data"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/manage_farm_no_data"
+        app:layout_constraintTop_toBottomOf="@+id/my_account_info"
+        app:srcCompat="@drawable/top_up_account" />
+
+    <ImageView
+        android:id="@+id/send_to_market"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/manage_farm_no_data"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/manage_farm_no_data"
+        app:layout_constraintTop_toBottomOf="@+id/price_my_produce"
+        app:srcCompat="@drawable/send_to_market" />
+
+    <ImageView
+        android:id="@+id/my_account_info"
+        android:layout_width="149dp"
+        android:layout_height="56dp"
+        app:layout_constraintEnd_toEndOf="@+id/manage_farm_no_data"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/manage_farm_no_data"
+        app:layout_constraintTop_toBottomOf="@+id/send_to_market"
+        app:srcCompat="@drawable/my_account_info" />
+
+    <ImageView
+        android:id="@+id/price_my_produce"
+        android:layout_width="156dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:cropToPadding="true"
+        app:layout_constraintEnd_toEndOf="@+id/manage_farm_no_data"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/manage_farm_no_data"
+        app:layout_constraintTop_toTopOf="@+id/manage_farm_no_data"
+        app:srcCompat="@drawable/price_my_produce" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

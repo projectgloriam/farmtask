@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Farm Task</string>
+    <string name="full_name">Full name</string>
+    <string name="mobile">Mobile #</string>
+    <string name="id_type">ID Type</string>
+    <string name="id_number">ID #</string>
+    <string name="create_password">Create Password</string>
+    <string name="terms">I accept the Terms &amp; Conditions for using this service.</string>
+    <string name="width">335dp</string>
+    <string name="height">48dp</string>
+    <string name="farm_type">Farm Type</string>
+    <string name="category">Category</string>
+    <string name="animal">Animal</string>
+    <string name="crop">Crop</string>
+    <string name="cash">Cash</string>
+    <string name="food">Food</string>
+    <string name="cultivate">Cultivate</string>
+    <string name="farm_size">Farm size</string>
+    <string name="pay_with">Pay with</string>
+    <string name="mmoney">M.Money</string>
+    <string name="ccard">C.Card</string>
+    <string name="cardno">Card No.</string>
+    <string name="cvc">CVC</string>
+    <string name="billaddress">Bill address</string>
+    <string name="expire">Expire</string>
+    <string name="tasks">Tasks</string>
+    <string name="account">Account</string>
+    <string name="harvest">Harvest</string>
+    <string name="counter">Counter</string>
+    <string name="store">Store</string>
+    <string name="service">Service</string>
+    <string name="new_farm">New Farm</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
+    <string-array name="cultivate_array">
+        <item>Cocoa</item>
+        <item>Cows</item>
+        <item>Corn</item>
+        <item>Chicken</item>
+    </string-array>
+
+    <string-array name="farm_size_array">
+        <item>1 (Acre)</item>
+        <item>2 (Acre)</item>
+        <item>3 (Acre)</item>
+        <item>4 (Acre)</item>
+    </string-array>
+
+    <string-array name="id_type_array">
+        <item>Voters ID</item>
+        <item>Drivers License</item>
+        <item>Passport</item>
+    </string-array>
+</resources>

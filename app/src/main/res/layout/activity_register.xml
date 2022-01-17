@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_signup"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/registerRibbon"
+        android:layout_width="335dp"
+        android:layout_height="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/register_ribbon" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:drawableLeft="@mipmap/ic_person"
+        android:ems="10"
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerRibbon" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@mipmap/ic_phone"
+        android:ems="10"
+        android:hint="@string/mobile"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <Spinner
+        android:id="@+id/id_type"
+        android:layout_width="335dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:entries="@array/id_type_array"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <EditText
+        android:id="@+id/editTextTextID"
+        android:layout_width="335dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:drawableStart="@mipmap/ic_contact"
+        android:ems="10"
+        android:hint="@string/id_number"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_type" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="335dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@mipmap/ic_lock"
+        android:ems="10"
+        android:hint="@string/create_password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextID" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="211dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/terms"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="355dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="64dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/submit_btn_create_account" />
+</androidx.constraintlayout.widget.ConstraintLayout>
